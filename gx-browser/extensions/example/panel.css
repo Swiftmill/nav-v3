@@ -1,0 +1,26 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: rgba(10, 12, 20, 0.95);
+  color: #f8fafc;
+}
+
+main {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 12px;
+  background: rgba(15, 18, 30, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: inherit;
+  padding: 12px;
+  font-size: 14px;
+}

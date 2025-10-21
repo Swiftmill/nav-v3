@@ -1,0 +1,14 @@
+{
+  "name": "Default",
+  "vars": {
+    "--bg": "#06060d",
+    "--panel": "rgba(18, 20, 32, 0.75)",
+    "--text": "#f3f4f6",
+    "--accent": "#3b82f6",
+    "--accent-2": "#22d3ee",
+    "--radius": "14px",
+    "--blur": "14px"
+  },
+  "wallpaper": "assets/waves.mp4",
+  "glass": true
+}

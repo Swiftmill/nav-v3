@@ -1,0 +1,16 @@
+{
+  "name": "gx-browser",
+  "version": "0.1.0",
+  "description": "Lightweight OperaGX-inspired Electron browser shell.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "build": "echo \"(optionnel: electron-builder)\""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "28.1.0"
+  }
+}

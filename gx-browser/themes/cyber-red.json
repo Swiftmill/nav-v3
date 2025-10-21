@@ -1,0 +1,14 @@
+{
+  "name": "Cyber Red",
+  "vars": {
+    "--bg": "#120606",
+    "--panel": "rgba(40,14,20,0.68)",
+    "--text": "#ffe4e6",
+    "--accent": "#f97316",
+    "--accent-2": "#ef4444",
+    "--radius": "18px",
+    "--blur": "16px"
+  },
+  "wallpaper": "assets/waves.mp4",
+  "glass": true
+}

@@ -1,0 +1,10 @@
+/* Personnalisez l'interface ici. Exemple :
+:root {
+  /* accent alternatif */
+  --accent: #14b8a6;
+}
+
+.tab.active {
+  animation: pulse 6s ease infinite;
+}
+*/
