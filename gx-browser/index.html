@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' data:; font-src 'self' data:; connect-src 'self' https:; child-src 'self' https: http: data:; frame-src 'self' https: http: data:;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GX Browser</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="theme-dark">
+      <div class="titlebar">
+        <div class="window-drag"></div>
+        <div class="titlebar-actions">
+          <button data-action="minimize" aria-label="Minimiser"></button>
+          <button data-action="maximize" aria-label="Maximiser"></button>
+          <button data-action="close" aria-label="Fermer"></button>
+        </div>
+      </div>
+      <div class="layout">
+        <aside id="sidebar" class="sidebar">
+          <header class="sidebar-header">
+            <span class="logo">GX</span>
+          </header>
+          <nav class="sidebar-nav">
+            <button class="sidebar-btn" data-panel="favorites">Favoris</button>
+            <button class="sidebar-btn" data-panel="history">Historique</button>
+            <button class="sidebar-btn" data-panel="extensions">Extensions</button>
+            <button class="sidebar-btn" data-panel="settings">Paramètres</button>
+          </nav>
+          <div id="modules-slot" class="sidebar-modules"></div>
+          <div id="extensions-slot" class="sidebar-extensions"></div>
+        </aside>
+        <main class="main">
+          <header class="toolbar" id="toolbar">
+            <div class="toolbar-left">
+              <button class="nav-btn" data-action="back" aria-label="Retour"></button>
+              <button class="nav-btn" data-action="forward" aria-label="Avancer"></button>
+              <button class="nav-btn" data-action="refresh" aria-label="Rafraîchir"></button>
+              <button class="nav-btn" data-action="home" aria-label="Accueil"></button>
+            </div>
+            <div class="address">
+              <input id="address-input" type="text" placeholder="Rechercher ou entrer une URL" autocomplete="off" />
+              <div id="suggestions" class="suggestions hidden"></div>
+            </div>
+            <div class="toolbar-right">
+              <button class="toolbar-btn" data-action="new-tab" aria-label="Nouvel onglet">+</button>
+              <button class="toolbar-btn" data-action="toggle-sidebar" aria-label="Basculer la sidebar">≡</button>
+            </div>
+          </header>
+          <section id="tabstrip" class="tabstrip"></section>
+          <section class="content">
+            <div id="home-view" class="home hidden">
+              <video id="home-wallpaper" class="home-wallpaper" autoplay loop muted playsinline></video>
+              <div class="home-overlay">
+                <div class="home-grid">
+                  <section class="panel" data-widget="favorites">
+                    <header>
+                      <h2>Favoris</h2>
+                      <button data-action="edit-favorites">Gérer</button>
+                    </header>
+                    <ul id="home-favorites"></ul>
+                  </section>
+                  <section class="panel" data-widget="speed-dial">
+                    <header>
+                      <h2>Sites rapides</h2>
+                      <button data-action="add-speed">Ajouter</button>
+                    </header>
+                    <div id="home-speed"></div>
+                  </section>
+                  <section class="panel" data-widget="notes">
+                    <header>
+                      <h2>Notes</h2>
+                    </header>
+                    <textarea id="home-notes" placeholder="Écrire une note..."></textarea>
+                  </section>
+                  <section class="panel" data-widget="clock">
+                    <header>
+                      <h2>Horloge</h2>
+                      <div>
+                        <label class="toggle">
+                          <input type="checkbox" id="wallpaper-toggle" checked />
+                          <span>Fond vidéo</span>
+                        </label>
+                        <label class="toggle">
+                          <input type="checkbox" id="wallpaper-mute" checked />
+                          <span>Muet</span>
+                        </label>
+                      </div>
+                    </header>
+                    <div id="home-clock"></div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="webviews" class="webviews"></div>
+          </section>
+        </main>
+        <aside id="panel" class="sidepanel hidden">
+          <header class="panel-header">
+            <h2 id="panel-title">Panel</h2>
+            <button id="panel-close" aria-label="Fermer">×</button>
+          </header>
+          <div class="panel-body">
+            <div id="panel-content"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script type="module" src="renderer.js"></script>
+  </body>
+</html>

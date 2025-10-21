@@ -1,0 +1,15 @@
+{
+  "default": "google",
+  "providers": {
+    "google": "https://www.google.com/search?q=%s",
+    "ddg": "https://duckduckgo.com/?q=%s",
+    "brave": "https://search.brave.com/search?q=%s",
+    "yt": "https://www.youtube.com/results?search_query=%s"
+  },
+  "bangs": {
+    "!g": "google",
+    "!ddg": "ddg",
+    "!b": "brave",
+    "!yt": "yt"
+  }
+}

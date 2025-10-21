@@ -1,0 +1,24 @@
+{
+  "theme": "neon-violet",
+  "home": "home://gx",
+  "search": "!g",
+  "keybinds": {
+    "newTab": "Ctrl+T",
+    "closeTab": "Ctrl+W",
+    "reopenTab": "Ctrl+Shift+T",
+    "focusAddress": "Ctrl+L",
+    "toggleSidebar": "Ctrl+B",
+    "fullscreen": "F11",
+    "miniMode": "F10"
+  },
+  "layout": {
+    "tabPosition": "top",
+    "sidebar": "left",
+    "density": "compact"
+  },
+  "modules": {
+    "adblock": true,
+    "downloads": true,
+    "media-controls": true
+  }
+}

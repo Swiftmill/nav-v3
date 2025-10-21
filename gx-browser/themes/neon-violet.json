@@ -1,0 +1,14 @@
+{
+  "name": "Neon Violet",
+  "vars": {
+    "--bg": "#0b0b12",
+    "--panel": "rgba(20,24,40,0.7)",
+    "--text": "#e8eaff",
+    "--accent": "#8b5cf6",
+    "--accent-2": "#22d3ee",
+    "--radius": "16px",
+    "--blur": "12px"
+  },
+  "wallpaper": "assets/waves.mp4",
+  "glass": true
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Bloc-notes",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "menu": { "sidebar": true }
+}
